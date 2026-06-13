@@ -214,11 +214,11 @@ $$
 \boldsymbol{C}_F = \boldsymbol{K}_F + \boldsymbol{K}_I \int_{0}^{t} (\cdot)\, d\varsigma
 $$
 
-Donde $\boldsymbol{K}_I$ es la matriz de ganancias inegral y $\boldsymbol{K}_F$ es la matriz de ganancias proporcional.
+Donde $\boldsymbol{K}_I$ es la matriz de ganancias integral y $\boldsymbol{K}_F$ es la matriz de ganancias proporcional.
 
 ### Aplicacion práctica
 
-Para simular el la respuesta del sistema se van a utilizar los siguientes valores:
+Para simular la respuesta del sistema se van a utilizar los siguientes valores:
 
 - Ganancias proporcionales:
   
