@@ -6,9 +6,8 @@ En esta práctica se realizará un control de fuerza con un lazo interno de posi
 La dinámica del robot se linealiza mediante una ley de control por dinámica inversa que compensa los efectos dinámicos del manipulador, incluyendo las fuerzas externas:
 
 $$
-\boldsymbol{\tau} = \boldsymbol{M(q)}\boldsymbol{\ddot{q}}_d 
-+ \boldsymbol{C(q,\dot{q})\dot{q}} + \boldsymbol{F}_b\boldsymbol{\dot{q}}
-+ \boldsymbol{g(q)} + \boldsymbol{J^T(q)f}_e
+\boldsymbol{\tau} = \boldsymbol{M(q)}\boldsymbol{\ddot{q}}_d + \boldsymbol{C(q,\dot{q})\dot{q}} + 
+\boldsymbol{F}_b\boldsymbol{\dot{q}} + \boldsymbol{g(q)} + \boldsymbol{J}^T\boldsymbol{(q)f}_e
 $$
 
 donde:
@@ -60,9 +59,8 @@ donde:
 A continuación se muestra la ecuación del controlador junto con su correspondiente esquema de bloques (figura 5.1.1).
 
 $$
-\boldsymbol{M}_d \boldsymbol{\ddot{x}}_e + \boldsymbol{K}_D \boldsymbol{\dot{x}}_e 
-+ \boldsymbol{K}_P (\boldsymbol{I}_3 + \boldsymbol{C}_F \boldsymbol{K})\boldsymbol{x}_e
-=
+\boldsymbol{M}_d \boldsymbol{\ddot{x}}_e + \boldsymbol{K}_D \boldsymbol{\dot{x}}_e + 
+\boldsymbol{K}_P (\boldsymbol{I}_3 + \boldsymbol{C}_F \boldsymbol{K})\boldsymbol{x}_e =
 \boldsymbol{K}_P \boldsymbol{C}_F (\boldsymbol{Kx}_r + \boldsymbol{f}_d)
 $$
 
@@ -142,6 +140,7 @@ M_d =
 $$
 
 - Amortiguamiento deseado:
+  
 $$
 K_D =
 \begin{bmatrix}
@@ -152,6 +151,7 @@ K_D =
 $$
 
 - Rigidez deseada:
+  
 $$
 K_P =
 \begin{bmatrix}
