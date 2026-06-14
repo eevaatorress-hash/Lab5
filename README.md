@@ -197,7 +197,7 @@ Para corregir el error de posición, hay que imponer una restricción de posici�
     <em>Figura 5.1.5: Esquema del controlador P modificado.</em>
 </p>
 
-En la figura 5.1.6 se muestar que efectivamente se ah resuelto el problema de la posición.
+En la figura 5.1.6 se muestar que efectivamente se ha resuelto el problema de la posición.
 
 <p align="center">
     <img src="/images/posicion_P_implementado_alternativa.png">
